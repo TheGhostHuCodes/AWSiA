@@ -1,0 +1,9 @@
+provider "aws" {
+  region  = "us-east-1"
+  profile = "AWSiA"
+}
+
+resource "aws_key_pair" "my_key_us_east_1" {
+  key_name   = "aws-personal"
+  public_key = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQCs1W/kcCM7EXfKdWIQTjd8fxcRgumHlsPrdyra2re7n7ejrtXZa4zxMdFBMETfsPcvQYz8U4eLda9TXqcndaLsHvq0znmJtGfIDDLe/GATOsqWEI3+Ts9+1NTZzsnOhgSbWYU4Ur02bHbBQ2Xu/nnqlm7awDtHHEw5kaBjJKhrkuwXnO2m3bq/Kih962iC0SgE4NsVrj5+0hoWcuK0LW29EUAVGUtcy78oDRGHtdgLY/8hxXBiRVjzBAg62gLvUcZWkxiDFT89zgA7cv3COL5Tjl6ehEloT2xUrNlIXJv7aglEDU0SXJnh20H00CLF2jBLdfv9v9iG/i6a0Kh43t9l6vdwZYAasMXG7KtuwLqesCZBIO4A93htmDZEuaQOugRAncf6U0n56TaAuwkgsM9YPQn7I2PsGcSzTB42Ibf93TX+UP6iXFluVr3oS0drIiiKIziEUrGMGgT1hfTUNS+VMpJ/yEjNXcPkM3UDzD7wHL1K0AhMlYB0Hp/OlmL74hycsC10IDwKKfC3DvtnIv1HHjm+pbRpli/cV1xyRp+h2z/8B9yYfRVUEQTG6oLjQFROnKzy2wljZ8dPbnShyxsZyxd7cYStnQyqhfId1ogl2bhTFsIuBTYHXarc46Yjith+EgkovR2vznzZs0kHbkY9ZrGdhivaK0NPZjQ8s5C+Jw== yungjinhu@gmail.com"
+}
